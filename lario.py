@@ -1,4 +1,3 @@
-# bot.py
 import os
 import random
 
@@ -16,7 +15,7 @@ client = discord.Client(intents=intents)
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
-    channel = await client.fetch_channel(1079096623763820664) 
+    channel = await client.fetch_channel("your channel here") 
     @tasks.loop(minutes=5)
 
     async def sendmessage():
